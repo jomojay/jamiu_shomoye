@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌙 Dark Mode Styling */
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+/* 🎨 Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-gray-100;
+}
+
+/* 🔵 Buttons */
+.btn {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300;
+}
+
+/* 📌 Navbar */
+.navbar {
+  @apply flex justify-between items-center py-4 px-6 bg-gray-800 shadow-md fixed w-full z-50;
+}
+
+/* 📍 Section Layout */
+.section {
+  @apply py-16 px-6 max-w-6xl mx-auto;
+}
+
+/* 🎭 Hero Section */
+.hero {
+  @apply text-center flex flex-col justify-center items-center min-h-screen;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl font-bold text-blue-400;
+}
+
+.hero-subtitle {
+  @apply text-lg md:text-xl text-gray-400 mt-4;
+}
+
+/* 🛠️ Skills Grid */
+.skills-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center mt-8;
+}
+
+.skill-card {
+  @apply bg-gray-800 p-4 rounded-lg shadow-md transition transform hover:scale-105;
+}
+
+/* 📜 Blog Card */
+.blog-card {
+  @apply bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+}
+
+.blog-title {
+  @apply text-lg font-semibold text-blue-400;
+}
+
+.blog-meta {
+  @apply text-gray-500 text-sm mt-2;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+article {
+  flex: 1 1 calc(50% - 20px);
+  background: var(--hover-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+  margin-bottom: 10px;
+}
+
+article a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* 🔹 Project Card */
+.project-card {
+  @apply bg-gray-800 p-6 rounded-lg shadow-lg transition duration-300 hover:scale-105;
+}
+
+.project-title {
+  @apply text-lg font-semibold text-blue-400;
+}
+
+.project-description {
+  @apply text-gray-400 mt-2;
+}
+
+/* ✉️ Contact Form */
+.input-field {
+  @apply w-full p-2 bg-gray-700 border border-gray-600 rounded text-white;
+}
+
+.textarea-field {
+  @apply w-full p-2 bg-gray-700 border border-gray-600 rounded text-white h-32;
+}
+
+/* 🔗 Footer */
+.footer {
+  @apply bg-gray-800 text-center py-6 text-gray-400;
+}
+
+footer .container {
+  @apply flex flex-col items-center;
+}
+
+footer a {
+  @apply text-blue-400 hover:underline px-2;
+}
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
